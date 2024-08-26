@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web dev final</title>
+    <link rel="stylesheet" href="style.css"/>
+    <link rel="stylesheet" href="work.css"/>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id="loading__screen">
+        <div class="loader"></div>
+        <div class="loader"></div>
+        <div class="loader"></div>
+    </div>
+    <nav class="navbar" id="navbar">
+        <div class="navbar__container">
+            <div class="navbar__logo">
+                <a href="index.html" class="navbar__logo-link">Code & Canvas</a>
+            </div>
+            <ul class="navbar__menu">
+                <li class="navbar__item">
+                    <a href="about.html" class="navbar__links">ABOUT ME</a> 
+                </li>
+                <li class="navbar__item">
+                    <a href="work.html" class="navbar__links">WORK</a> 
+                </li>
+                <li class="navbar__item">
+                    <a href="shop.html" class="navbar__links">SHOP</a> 
+                </li>
+                <li class="navbar__item">
+                    <a href="contact.html" class="navbar__links">CONTACT</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <div class="layout">
+        <div class="left__side">
+            <h1>Work</h1>
+            <div class="project__titles">
+                <a href="#nature">Serenity by the Lake</a>  
+                <a href="#project2">Earth & Water</a>
+                <a href="#graphicD">Graphic Design</a>
+                <a href="#webd">Web Design</a>
+            </div>
+        </div>
+        <div class="right__side">
+            <section class="work__intro" id="nature">
+                <img src="images/pic2.jpg" alt="Work Intro" class="work__intro-img">
+                <h1>Serenity by the Lake</h1>
+                <p>Bled, Radovljica, Slovenia</p>
+            </section>
+            <section class="work__intro" id="project2">
+                <img src="images/pic3.jpg" alt="Work Intro" class="work__intro-img">
+                <h1>Earth & Water</h1>
+                <p>Lakes Viti and Oskjuvatn on Iceland</p>
+            </section>
+            <section class="work__intro" id="graphicD">
+                <img src="images/pic5.png" alt="Skill Icon" class="skill__img">
+                <h1>Graphic Design</h1>
+                <p>Proficient in Adobe Photoshop, Illustrator, and InDesign.</p>
+            </section>
+            <section class="work__intro" id="webd">
+                <img src="images/pic4.png" alt="Skill Icon" class="skill__img">
+                <h1>Web Design</h1>
+                <p>Experienced with HTML, CSS, JavaScript, and responsive design.</p>
+            </section>
+        </div>
+    </div>
+</body>
+<script src="app.js"></script>
+</html>

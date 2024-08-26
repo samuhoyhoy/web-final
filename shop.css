@@ -1,0 +1,162 @@
+html, body {
+    overflow-y: hidden; 
+    margin: 0;
+    padding: 0;
+}
+
+.navbar {
+    color: #fff;
+    background-color: #0E294B;
+    padding: 1rem 2rem;
+}
+
+.about-main {
+    padding: 2rem;
+}
+
+.shop__menu {
+    width: 100vw; 
+    overflow-x: auto; 
+    overflow-y: hidden; 
+}
+
+.shop__container {
+    display: flex;
+    width: 400vw; 
+}
+
+.shop__item {
+    position: relative;
+    width: 100vw; 
+    height: 100vh; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    cursor: pointer;
+    background-color: #fff; 
+}
+
+.shop__item img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 0; 
+}
+
+.shop__item .btn {
+    position: absolute;
+    z-index: 2;
+    color: #fff;
+    background-color: rgba(0, 0, 0, 0.7); 
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 1.5rem;
+    padding: 1rem 2rem;
+    border: none;
+    border-radius: 5px;
+    text-align: center;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7); 
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.shop__item .btn:hover {
+    background-color: #9B111E; 
+    color: #fff; 
+}
+
+.popup {
+    width: 400px;
+    background: #fff;
+    border-radius: 6px;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0.1); 
+    text-align: center;
+    padding: 0 30px 120px;
+    color: #333;
+    visibility: hidden; 
+    transition: transform 0.4s, top 0.4s; 
+    z-index: 1000;
+}
+
+.open-popup {
+    visibility: visible;
+    top: 50%;
+    transform: translate(-50%, -50%) scale(1)
+}
+
+.popup h2 {
+    font-size: 38px;
+    font-weight: 500;
+    margin: 30px 0 10px;
+}
+
+.popup__buttons {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.popup__buttons .btn {
+    width: 48%;
+    padding: 10px 0;
+    font-size: 18px;
+    border-radius: 4px;
+    cursor: pointer;
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
+    border: none;
+    outline: none;
+    color: #fff;
+}
+
+.popup__buttons .ok-btn {
+    margin-top: 50px;
+    background-color: #6fd649;
+}
+
+.popup__buttons .buy-btn {
+    margin-top: 100px;
+    background-color: #ff5733;
+}
+
+.scroll-left,
+.scroll-right {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 1rem;
+    border-radius: 5px;
+    z-index: 1000;
+    transition: background-color 0.3s ease;
+}
+
+.scroll-left {
+    left: 10px; 
+}
+
+.scroll-right {
+    right: 10px; 
+}
+
+.scroll-left:hover,
+.scroll-right:hover {
+    background-color: #555; 
+}
+
+.scroll-left:focus,
+.scroll-right:focus {
+    outline: none; 
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+}

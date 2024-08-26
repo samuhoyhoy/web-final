@@ -1,0 +1,160 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    background-color: #65131e;
+}
+
+#loading__screen {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+    width: 100%;
+    height: 100%;
+    z-index: 100;
+    background: linear-gradient(45deg, #ff6ec4, #7873f5);
+    position: fixed;
+    top: 0;
+    left: 0;
+    opacity: 1;
+    transition: opacity 1s ease;
+}
+
+#loading__screen.fade-out {
+    opacity: 0; 
+    pointer-events: none; 
+}
+
+.loader {
+    width: 40px;
+    height: 40px;
+    background: #fff;
+    border-radius: 50%;
+    box-shadow: 0 -0.4rem rgba(60, 0, 80, 0.1) inset;
+    animation: cycle 1s ease-in-out infinite;
+}
+
+.loader:nth-child(1) {
+    animation-delay: 0;
+}
+
+.loader:nth-child(2) {
+    animation-delay: 0.2s;
+}
+
+.loader:nth-child(3) {
+    animation-delay: 0.4s;
+}
+
+@keyframes cycle {
+    0% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(1rem);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+    
+}
+
+#navbar {
+    display: none;
+}
+
+.navbar {
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2rem;
+    position: sticky;
+    top: 0;
+    z-index: 999;
+}
+
+.navbar__container {
+    display: flex;
+    justify-content: space-between;
+    height: 80px;
+    z-index: 1;
+    width: 100%;
+    max-width: 650px;
+    margin: 0;
+    padding: 0 20px;
+}
+
+.navbar__logo {
+    position: absolute;
+    left: 0;
+    padding-top: 10px;
+    padding-left: 100px;
+}
+
+.navbar__logo-link {
+    color: #fff;
+    font-family: 'Dancing Script', cursive;
+    font-size: 2.5rem;
+    text-decoration: none;
+}
+
+.navbar__menu {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    text-align: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.navbar__item {
+    height: 80px;
+}
+
+.navbar__links {
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    padding: 0 0.8rem;
+    height: 100%;
+}
+
+.navbar__links:hover {
+    color: #f0c14b;
+    transition: color 0.3s ease;
+    transform: scale(1.1);
+    transition: transform 0.3s ease;
+}
+
+.centered__logo {
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background: #65131e;
+}
+
+.logo {
+    width: 800px;
+    height: 950px;
+}
+
+.subtitle {
+    font-size: 2rem; 
+    color: #fff; 
+    margin-top: 5px; 
+    text-align: center;
+    position: relative;
+    top: -150px;
+    cursor: pointer;
+}

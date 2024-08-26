@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web dev final</title>
+    <link rel="stylesheet" href="style.css"/>
+    <link rel="stylesheet" href="shop.css"/>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id="loading__screen">
+        <div class="loader"></div>
+        <div class="loader"></div>
+        <div class="loader"></div>
+    </div>
+    <nav class="navbar" id="navbar">
+        <div class="navbar__container">
+            <div class="navbar__logo">
+                <a href="index.html" class="navbar__logo-link">Code & Canvas</a>
+            </div>
+            <ul class="navbar__menu">
+                <li class="navbar__item">
+                    <a href="about.html" class="navbar__links">ABOUT ME</a> 
+                </li>
+                <li class="navbar__item">
+                    <a href="work.html" class="navbar__links">WORK</a> 
+                </li>
+                <li class="navbar__item">
+                    <a href="shop.html" class="navbar__links">SHOP</a> 
+                </li>
+                <li class="navbar__item">
+                    <a href="contact.html" class="navbar__links">CONTACT</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <div class="shop__menu">
+        <div class="shop__container">
+            <div class="shop__item">
+                <img src="images/shop1.jpg" alt="product 1">
+                <button type="button" class="btn" onclick="openPopup('popup1')">Flat</button>
+                <div class="popup" id="popup1">
+                    <h2>Flat Design</h2>
+                    <p>A clean, modern design package perfect for websites, apps, and presentations. Includes icon sets, UI elements, and templates in PSD, AI, and SVG formats.</p>
+                    <div class="popup__buttons">
+                        <button type="button" class="btn ok-btn" onclick="closePopup('popup1')">OK</button>
+                        <button type="button" class="btn buy-btn" onclick="showThankYouMessage()">Buy Now</button>
+                    </div>
+                </div>
+            </div>
+            <div class="shop__item">
+                <img src="images/shop2.jpg" alt="product 2">
+                <button type="button" class="btn" onclick="openPopup('popup2')">Minimalistic</button>
+                <div class="popup" id="popup2">
+                    <h2>Minimalistic Design</h2>
+                    <p>Our Minimalistic Design package focuses on simplicity and elegance. Perfect for creating clean, modern interfaces that are easy to navigate.</p>
+                    <div class="popup__buttons">
+                        <button type="button" class="btn ok-btn" onclick="closePopup('popup2')">OK</button>
+                        <button type="button" class="btn buy-btn" onclick="showThankYouMessage()">Buy Now</button>
+                    </div>
+                </div>
+            </div>
+            <div class="shop__item">
+                <img src="images/shop3.jpg" alt="product 3">
+                <button type="button" class="btn" onclick="openPopup('popup3')">Colourful</button>
+                <div class="popup" id="popup3">
+                    <h2>Colourful Design</h2>
+                    <p>The Colourful Design package offers vibrant, eye-catching visuals. Ideal for projects that need to stand out with bold, dynamic colors.</p>
+                    <div class="popup__buttons">
+                        <button type="button" class="btn ok-btn" onclick="closePopup('popup3')">OK</button>
+                        <button type="button" class="btn buy-btn" onclick="showThankYouMessage()">Buy Now</button>
+                    </div>
+                </div>
+            </div>
+            <div class="shop__item">
+                <img src="images/shop4.jpg" alt="product 4">
+                <button type="button" class="btn" onclick="openPopup('popup4')">Historical</button>
+                <div class="popup" id="popup4">
+                    <h2>Historical Design</h2>
+                    <p>The Historical Design package features classic, timeless elements. Best suited for projects that require a touch of tradition and sophistication.</p>
+                    <div class="popup__buttons">
+                        <button type="button" class="btn ok-btn" onclick="closePopup('popup4')">OK</button>
+                        <button type="button" class="btn buy-btn" onclick="showThankYouMessage()">Buy Now</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <button class="scroll-left">Left</button>
+    <button class="scroll-right">Right</button>
+</body>
+<script src="app.js"></script>
+</html>
